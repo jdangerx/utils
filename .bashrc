@@ -135,13 +135,18 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
-# PATH for MCNP executables
-# export PATH
-export PATH="${HOME}/mcnp/MCNP_CODE/bin:${PATH}";
-
 # Increase the stacksize
 ulimit -s unlimited
 
 # DATAPATH for MCNP cross-section data
 export DATAPATH
 DATAPATH="/home/john/mcnp/MCNP_DATA"
+
+# ciderpress stuff for apple ii
+export PATH="${HOME}/ciderpress/linux:${PATH}";
+
+# rubygems
+export PATH="${HOME}/.gem/ruby/2.2.0/bin:${PATH}";
+
+# ghit
+export PATH="${HOME}/ghit/dist/build/ghit/:${PATH}";
