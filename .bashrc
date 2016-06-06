@@ -105,30 +105,12 @@ fi
 
 
 # PATH variables
-export PATH="${HOME}/.cabal/bin:${PATH}";
-# export PATH="${HOME}/.local/bin:${PATH}";
+export PATH="${HOME}/.local/bin:${PATH}";
 
 export PERL_LOCAL_LIB_ROOT="$PERL_LOCAL_LIB_ROOT:/home/john/perl5";
 export PERL_MB_OPT="--install_base /home/john/perl5";
 export PERL_MM_OPT="INSTALL_BASE=/home/john/perl5";
 export PERL5LIB="/home/john/perl5/lib/perl5:$PERL5LIB";
-
-# LD_LIBRARY_PATH so that python can find pyne in a virtualenv
-export LD_LIBRARY_PATH="${HOME}/.virtualenvs/cnerg/lib:${LD_LIBRARY_PATH}"
-export LD_LIBRARY_PATH="${HOME}/.local/lib/cyclus:${LD_LIBRARY_PATH}"
-export CYCLUS_PATH="${HOME}/.local/lib/cyclus"
-
-# CROSS_SECTIONS for openmc
-export CROSS_SECTIONS="${HOME}/openmc/data/nndc/cross_sections.xml"
-# export CROSS_SECTIONS="${HOME}/openmc/data/cross_sections_ascii.xml"
-# export CROSS_SECTIONS="${HOME}/openmc/data/cross_sections.xml"
-
-# MPI threads for openmc
-export OMP_NUM_THREADS=3
-
-# virtualenvwrapper
-export WORKON_HOME="${HOME}/.virtualenvs"
-source /usr/bin/virtualenvwrapper.sh
 
 # ibus
 export GTK_IM_MODULE=ibus
@@ -138,15 +120,11 @@ export QT_IM_MODULE=ibus
 # Increase the stacksize
 ulimit -s unlimited
 
-# DATAPATH for MCNP cross-section data
-export DATAPATH
-DATAPATH="/home/john/mcnp/MCNP_DATA"
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
 
-# ciderpress stuff for apple ii
-export PATH="${HOME}/ciderpress/linux:${PATH}";
-
-# rubygems
-export PATH="${HOME}/.gem/ruby/2.2.0/bin:${PATH}";
-
-# ghit
-export PATH="${HOME}/ghit/dist/build/ghit/:${PATH}";
+# tpt
+export FRONT_HOSTNAME="front-johnxia"
+export AIRFLOW_HOME="~/airflow_home"
+export TERM='xterm'
