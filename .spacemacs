@@ -25,7 +25,11 @@ values."
      ;; ----------------------------------------------------------------
      auto-completion
      emacs-lisp
+     elixir
+     erlang
      git
+     github
+     ipython-notebook
      markdown
      gtags
      org
