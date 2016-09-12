@@ -1,0 +1,19 @@
+[push]
+	default = simple
+
+[alias]
+l = log --stat --decorate --graph # Recent commits with git l -p
+d = diff -w  # Ignore whitespace
+rpull = pull --rebase # Place your commits in the branch on top 
+                      # of the latest state of the branch.  You 
+                      # can safely replace all uses of git pull 
+                      # with git rpull
+branches = branch -v
+prune-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -d
+
+[core]
+	editor = vim
+	excludesfile = /home/john/.gitignore_global
+
+[include]
+	path = ~/.gitconfig.secret
