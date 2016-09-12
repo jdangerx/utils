@@ -124,10 +124,13 @@ ulimit -s unlimited
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
-# tpt
-export FRONT_HOSTNAME="front-johnxia"
-export AIRFLOW_HOME="~/airflow_home"
 export TERM='xterm'
 
 export NVM_DIR="/home/john/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+if [ -f ~/.tpt-env.sh ]; then
+    . ~/.tpt-env.sh
+fi
+
+eval $(ssh-agent) > /dev/null
