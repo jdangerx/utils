@@ -4,6 +4,9 @@ set smarttab
 set expandtab
 set softtabstop=4
 set autoindent
+
+set incsearch
 set ignorecase
 set smartcase
+
 imap fd <Esc>

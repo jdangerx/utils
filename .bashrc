@@ -105,7 +105,7 @@ fi
 
 
 # PATH variables
-export PATH="${HOME}/.local/bin:${PATH}";
+export PATH="${HOME}/.local/bin:${HOME}/.gem/ruby/2.3.0/bin:${PATH}";
 
 export PERL_LOCAL_LIB_ROOT="$PERL_LOCAL_LIB_ROOT:/home/john/perl5";
 export PERL_MB_OPT="--install_base /home/john/perl5";

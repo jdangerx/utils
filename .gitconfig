@@ -2,6 +2,8 @@
 	default = simple
 
 [alias]
+stauts = status
+statsu = status
 l = log --stat --decorate --graph # Recent commits with git l -p
 d = diff -w  # Ignore whitespace
 rpull = pull --rebase # Place your commits in the branch on top 
