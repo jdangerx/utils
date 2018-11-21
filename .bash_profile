@@ -3,7 +3,7 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc &&
-TZ='America/Chicago'; export TZ
+TZ='America/New_York'; export TZ
 
 eval $(ssh-agent)
 ssh-add

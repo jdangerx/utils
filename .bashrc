@@ -16,11 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
-
-# vi mode
-set -o vi
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -67,25 +64,11 @@ else
 fi
 unset color_prompt force_color_prompt
 
-
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
 fi
-
-# some more ls aliases
-alias l='ls'
-alias s='ls'
 
 # Alias definitions.
 if [ -f ~/.bash_aliases ]; then
@@ -103,34 +86,21 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-# PATH variables
-export PATH="${HOME}/.local/bin:${HOME}/.gem/ruby/2.3.0/bin:${PATH}";
-
-export PERL_LOCAL_LIB_ROOT="$PERL_LOCAL_LIB_ROOT:/home/john/perl5";
-export PERL_MB_OPT="--install_base /home/john/perl5";
-export PERL_MM_OPT="INSTALL_BASE=/home/john/perl5";
-export PERL5LIB="/home/john/perl5/lib/perl5:$PERL5LIB";
-
-# ibus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
 # Increase the stacksize
 ulimit -s unlimited
 
-# virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
-
 export TERM='xterm'
 
-export NVM_DIR="/home/john/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-if [ -f ~/.tpt-env.sh ]; then
-    . ~/.tpt-env.sh
+if [ -f ~/.ostracod-env.sh ]; then
+    . ~/.ostracod-env.sh
 fi
 
 eval $(ssh-agent) > /dev/null
+
+export PATH="${HOME}/.local/bin:${PATH}"
+
+
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source virtualenvwrapper_lazy.sh
+
+
