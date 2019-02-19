@@ -1,8 +1,7 @@
 !! URxvt
 
 URxvt*scrollBar:                      false
-URxvt*font:                           xft:Fira Code:size=28, xft:WenQuanYi Micro Hei Light:size=28
-URxvt.letterSpace: -1
+URxvt*font:                           xft:Fira Code:size=27, xft:WenQuanYi Micro Hei Light:size=27
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 URxvt.perl-ext-common: font-size

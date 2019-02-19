@@ -102,5 +102,3 @@ export PATH="${HOME}/.local/bin:${PATH}"
 
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source virtualenvwrapper_lazy.sh
-
-

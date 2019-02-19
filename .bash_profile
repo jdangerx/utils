@@ -5,5 +5,5 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc &&
 TZ='America/New_York'; export TZ
 
-eval $(ssh-agent)
-ssh-add
+eval $(ssh-agent) > /dev/null
+ssh-add 2> /dev/null

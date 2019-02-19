@@ -9,4 +9,5 @@ redshift -l 40.71:-74.01 & # New York
 xset b off &
 setxkbmap -option ctrl:nocaps -option compose:ralt &
 ibus-daemon -drx &
+xss-lock -- i3lock -c c7e2db &
 exec i3
