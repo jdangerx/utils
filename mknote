@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+set -o errexit
+set -o errtrace
+set -o pipefail
+
+_mknote() {
+  ${EDITOR:-vim} "${NOTES_DIR:-.}/$(date +'%Y-%m-%dT%H:%M:%SZ%z')$1.md"
+}
+
+_mknote $1
