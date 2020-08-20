@@ -11,5 +11,11 @@ endif
 let g:wiki_root = '~/vimwiki'
 let g:wiki_filetypes = ['md']
 
-set autowriteall
+function Hyphenate(text) abort
+  return substitute(tolower(a:text), '\s\+', '-', 'g')
+endfunction
 
+let g:wiki_map_create_page = 'Hyphenate'
+let g:wiki_map_link_create = 'Hyphenate'
+
+set autowriteall
