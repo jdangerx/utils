@@ -19,3 +19,6 @@
 [submodule "vimplugins/vim-polyglot"]
 	path = vimplugins/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "vimplugins/wiki.vim"]
+	path = vimplugins/wiki.vim
+	url = https://github.com/lervag/wiki.vim.git
