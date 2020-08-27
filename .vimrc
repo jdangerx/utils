@@ -18,4 +18,8 @@ endfunction
 let g:wiki_map_create_page = 'Hyphenate'
 let g:wiki_map_link_create = 'Hyphenate'
 
+let g:vim_markdown_new_list_item_indent = 2
+
+set shiftwidth=2
+
 set autowriteall
