@@ -22,3 +22,9 @@
 [submodule "vimplugins/wiki.vim"]
 	path = vimplugins/wiki.vim
 	url = https://github.com/lervag/wiki.vim.git
+[submodule "doom-emacs"]
+	path = doom-emacs
+	url = https://github.com/hlissner/doom-emacs
+[submodule "vimplugins/ack.vim"]
+	path = vimplugins/ack.vim
+	url = https://github.com/mileszs/ack.vim
