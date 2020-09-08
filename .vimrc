@@ -21,8 +21,7 @@ let g:wiki_map_create_page = 'Hyphenate'
 let g:wiki_map_link_create = 'Hyphenate'
 
 let g:vim_markdown_new_list_item_indent = 2
-
-let g:nv_search_paths = ['~/vimwiki']
+let g:nv_search_paths = ['~/work/foam', '~/vimwiki']
 
 set shiftwidth=2
 
