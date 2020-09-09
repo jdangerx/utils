@@ -31,3 +31,6 @@
 [submodule "vimplugins/notational-fzf-vim"]
 	path = vimplugins/notational-fzf-vim
 	url = https://github.com/alok/notational-fzf-vim.git
+[submodule "vimplugins/vim-sneak"]
+	path = vimplugins/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
