@@ -23,8 +23,12 @@ let g:wiki_map_link_create = 'Hyphenate'
 let g:vim_markdown_new_list_item_indent = 2
 let g:nv_search_paths = ['~/work/foam', '~/vimwiki']
 
-let g:sneak#label=1
-
 set shiftwidth=2
 
 set autowriteall
+
+set background=light
+
+if has("nvim")
+  set inccommand=nosplit
+endif
