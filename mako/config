@@ -1,0 +1,5 @@
+default-timeout=2000
+font="IBM Plex Sans 10"
+background-color=#2B303B88
+border-size=0
+group-by=summary

@@ -1,0 +1,34 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["pulseaudio", "tray", "battery", "clock", "idle_inhibitor"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-alt": "{time}   {icon}",
+	"format-time": "{H}h{M}m",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+	"format-icons": {
+	    "activated": "☕",
+	    "deactivated": "😪"
+	}
+    },
+    "clock": {
+        "format": "{:%a, %b %d %H:%M}"
+    }
+}
