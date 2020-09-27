@@ -140,15 +140,12 @@ bar {
 
 default_border pixel 3
 exec_always nm-applet --indicator
-exec_always ibus-daemon -drx
+exec_always fcitx
 gaps inner 5
 
 # colors
-# client.focused          #4c7899 #487597 #ffffff #2e9ef4
 client.focused          #CCCCCC #AAAAAC #ffffff #2e9ef4
-# client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
-# client.urgent           #2f343a #900000 #ffffff #900000
 
 output eDP-1 scale 1.65
 output eDP-1 bg ~/img/clouds.png tile

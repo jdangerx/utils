@@ -19,15 +19,6 @@
 [submodule "vimplugins/vim-polyglot"]
 	path = vimplugins/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "vimplugins/wiki.vim"]
-	path = vimplugins/wiki.vim
-	url = https://github.com/lervag/wiki.vim.git
-[submodule "doom-emacs"]
-	path = doom-emacs
-	url = https://github.com/hlissner/doom-emacs
-[submodule "vimplugins/ack.vim"]
-	path = vimplugins/ack.vim
-	url = https://github.com/mileszs/ack.vim
 [submodule "vimplugins/notational-fzf-vim"]
 	path = vimplugins/notational-fzf-vim
 	url = https://github.com/alok/notational-fzf-vim.git
