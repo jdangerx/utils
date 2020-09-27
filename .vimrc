@@ -12,7 +12,7 @@ set shiftwidth=2
 
 set autowriteall
 
-set background=dark
+colorscheme onehalflight
 
 if has("nvim")
   set inccommand=nosplit
