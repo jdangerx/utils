@@ -25,6 +25,7 @@ call plug#end()
 
 let g:vim_markdown_new_list_item_indent = 2
 let g:nv_search_paths = ['~/work/foam', '~/notes']
+let g:nv_create_note_window = "edit"
 
 set shiftwidth=2
 
