@@ -25,3 +25,6 @@
 [submodule "vimplugins/vim-sneak"]
 	path = vimplugins/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
+[submodule "vimplugins/readthecomments"]
+	path = vimplugins/readthecomments
+	url = git@github.com:jdangerx/readthecomments.git
