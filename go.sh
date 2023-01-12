@@ -14,3 +14,5 @@ ln -s "${SCRIPT_DIR}/nvim" "${CONFIG_DIR}"
 mkdir -p "${CONFIG_DIR}/karabiner"
 ln -s "${SCRIPT_DIR}/karabiner.json" "${CONFIG_DIR}/karabiner/karabiner.json"
 
+ln -s "${SCRIPT_DIR}/tmux.conf" "${HOME}/.tmux.conf"
+
