@@ -16,3 +16,5 @@ ln -s "${SCRIPT_DIR}/karabiner.json" "${CONFIG_DIR}/karabiner/karabiner.json"
 
 ln -s "${SCRIPT_DIR}/tmux.conf" "${HOME}/.tmux.conf"
 
+ln -s "${SCRIPT_DIR}/config.toml" "${CONFIG_DIR}/helix/config.toml"
+
