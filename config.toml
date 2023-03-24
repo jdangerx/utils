@@ -1,1 +1,10 @@
-theme = "spacebones_light"
+theme = "monokai_pro"
+
+[editor]
+line-number = "relative"
+auto-save = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"

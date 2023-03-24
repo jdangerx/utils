@@ -2,4 +2,15 @@
 name = "python"
 roots = ["pyproject.toml"]
 language-server = { command = "pyright-langserver", args = ["--stdio"] }
-config = {} # <- this is the important line
+config = {}
+
+[[language]]
+name = "ruby"
+config = { solargraph = { diagnostics = true, formatting = false } }
+# only looks in the working directory for `bundle` - put a version of this with the absolute path in your .helix/languages.toml
+formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
+auto-format = true
+
+[[language]]
+name = "markdown"
+[language.auto-pairs]
