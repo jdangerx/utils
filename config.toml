@@ -1,4 +1,4 @@
-theme = "monokai_pro"
+theme = "monokai_pro_machine"
 
 [editor]
 line-number = "relative"
@@ -8,3 +8,12 @@ auto-save = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.soft-wrap]
+enable = true
