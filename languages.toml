@@ -3,6 +3,7 @@ name = "python"
 roots = ["pyproject.toml"]
 language-server = { command = "pyright-langserver", args = ["--stdio"] }
 config = {}
+auto-format = true
 
 [[language]]
 name = "ruby"

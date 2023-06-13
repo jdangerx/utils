@@ -1,4 +1,4 @@
-theme = "gruvbox"
+theme = "dark_plus"
 
 [editor]
 line-number = "relative"
@@ -11,9 +11,13 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+git-ignore = false
 
 [editor.whitespace.render]
 newline = "all"
 
 [editor.soft-wrap]
 enable = true
+
+[keys.insert]
+"esc" = ["normal_mode", ":w"]
