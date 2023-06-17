@@ -1,7 +1,6 @@
-theme = "dark_plus"
+theme = "base16_default_dark"
 
 [editor]
-line-number = "relative"
 auto-save = true
 
 [editor.cursor-shape]
@@ -21,3 +20,6 @@ enable = true
 
 [keys.insert]
 "esc" = ["normal_mode", ":w"]
+
+[keys.normal]
+"esc" = [":w"]
