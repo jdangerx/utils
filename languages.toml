@@ -3,6 +3,7 @@ name = "python"
 roots = ["pyproject.toml"]
 language-server = { command = "pyright-langserver", args = ["--stdio"] }
 config = {}
+formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 
 [[language]]

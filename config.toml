@@ -1,6 +1,7 @@
 theme = "base16_default_dark"
 
 [editor]
+line-number = "relative"
 auto-save = true
 
 [editor.cursor-shape]
@@ -9,8 +10,8 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
-git-ignore = false
+hidden = true
+git-ignore = true
 
 [editor.whitespace.render]
 newline = "all"
