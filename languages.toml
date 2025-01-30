@@ -1,18 +1,19 @@
 [[language]]
 name = "python"
-roots = ["pyproject.toml"]
-language-server = { command = "pyright-langserver", args = ["--stdio"] }
-config = {}
-formatter = { command = "black", args = ["--quiet", "-"] }
+roots = ["pyproject.toml", ".venv/"]
+language-servers = ["pyright", "ruff"]
 auto-format = true
+formatter = {command = "ruff", args = ["format", "-"]}
+file-types = ["py", "ipynb"]
 
-[[language]]
-name = "ruby"
-config = { solargraph = { diagnostics = true, formatting = false } }
-# only looks in the working directory for `bundle` - put a version of this with the absolute path in your .helix/languages.toml
-formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
-auto-format = true
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
 
-[[language]]
-name = "markdown"
-[language.auto-pairs]
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+
+[language-server.ruff]
+command = "ruff-lsp"
+[language-server.ruff.config.settings]
+args = ["--ignore", "E501"]
