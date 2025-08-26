@@ -1,2 +1,4 @@
-require('config')
-require('plugins')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
+
+vim.keymap.set("n", "<Leader>dn", "i<Escape>!!date +'\\%H:\\%M'<Enter>o")

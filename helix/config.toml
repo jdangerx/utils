@@ -1,7 +1,9 @@
-theme = "base16_default"
+theme = "gruvbox_light"
+
 [editor]
 line-number = "relative"
 auto-save = true
+auto-pairs = false
 
 [editor.cursor-shape]
 insert = "bar"
@@ -12,8 +14,8 @@ select = "underline"
 hidden = true
 git-ignore = true
 
-[editor.whitespace.render]
-newline = "all"
+[editor.indent-guides]
+render = true
 
 [editor.soft-wrap]
 enable = true
@@ -23,3 +25,7 @@ enable = true
 
 [keys.normal]
 "esc" = [":w"]
+
+[keys.normal.space]
+n = ":insert-output date +'%%H:%%M'"
+W = ":reflow"

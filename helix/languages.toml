@@ -5,15 +5,3 @@ language-servers = ["pyright", "ruff"]
 auto-format = true
 formatter = {command = "ruff", args = ["format", "-"]}
 file-types = ["py", "ipynb"]
-
-[language-server.pyright]
-command = "pyright-langserver"
-args = ["--stdio"]
-
-[language-server.pyright.config.python.analysis]
-typeCheckingMode = "basic"
-
-[language-server.ruff]
-command = "ruff-lsp"
-[language-server.ruff.config.settings]
-args = ["--ignore", "E501"]
