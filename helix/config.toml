@@ -29,3 +29,4 @@ enable = true
 [keys.normal.space]
 n = ":insert-output date +'%%H:%%M'"
 W = ":reflow"
+l = "@ms[a()<esc>;<space>P"
